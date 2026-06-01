@@ -1,0 +1,31 @@
+# kg_retrieval_skill/configs/retrieval_config.yaml
+# -------------------------------------------------
+# Configuration for the Contingency KG Retrieval Skill.
+
+graph:
+  # Path to a NetworkX JSON file, or a Neo4j URI (bolt://localhost:7687)
+  source: "data/dispatch_kg.json"
+  # "networkx" or "neo4j"
+  source_type: "networkx"
+
+# Number of BFS hops from seed nodes
+hop_count: 3
+
+# If set, only traverse edges whose relation type is in this list.
+# Comment out or set to null to traverse all edge types.
+edge_type_filter:
+  - connects_to
+  - has_procedure
+  - monitors
+  - controls
+  - adjacent_to
+
+scoring:
+  tfidf_weight: 0.5
+  distance_weight: 0.5
+
+pruning:
+  # Maximum number of topology nodes to retain
+  max_nodes: 80
+  # Approximate token budget for the entire subgraph JSON
+  token_budget: 1500
