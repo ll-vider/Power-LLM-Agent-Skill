@@ -42,7 +42,7 @@ cd llm-km-rl
 pip install -r requirements.txt
 ```
 
-### Minimal end-to-end example (IEEE 39-bus)
+### Minimal end-to-end example (IEEE 118-bus)
 
 ```python
 from kg_retrieval_skill.core.multi_hop_bfs import KGRetriever
