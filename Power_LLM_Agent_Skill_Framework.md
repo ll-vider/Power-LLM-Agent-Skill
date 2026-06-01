@@ -71,7 +71,7 @@ kg_retrieval_skill/
 ├── tests/
 │   └── test_bfs_retrieval.py
 └── examples/
-    └── ieee39_contingency_example.json
+    └── ieee118_contingency_example.json
 ```
 
 ### File Structure
@@ -312,7 +312,7 @@ km_ppo_integrator_skill/
 │   ├── test_value_estimation.py
 │   └── test_gradient_zeroing.py
 └── examples/
-    └── km_ppo_training_example.py    # Full training example on IEEE 39-bus system
+    └── km_ppo_training_example.py    # Full training example on IEEE 118-bus system
 ```
 
 ### File Structure
